@@ -21,7 +21,7 @@
 <body>
 
 <h1>Polityka Prywatności aplikacji mobilnej Routina</h1>
-<p class="meta">Polityka prywatności obowiązuje od dnia 15.05.2026 r.</p>
+<p class="meta">Polityka prywatności obowiązuje od dnia 15.05.2026 r. Aktualizacja informacji o analizie AI: 01.10.2026 r.</p>
 
 <p>Niniejsza Polityka prywatności określa zasady gromadzenia, przetwarzania i wykorzystywania danych osobowych pozyskanych od Państwa przez aplikację Routina prowadzoną przez MOIAMIA Żaneta Ochmańska-Król z siedzibą w Łomiankach Dolnych (zwaną dalej: Administratorem). Wszelkie nasze działania podlegają przepisom RODO (Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r.).</p>
 
@@ -44,6 +44,7 @@
   <li>dane konta: login, hasło w formie zabezpieczonej, ustawienia profilu, historia aktywności;</li>
   <li>dane podawane w ankiecie onboardingowej: wiek, płeć, wzrost, masa ciała, poziom aktywności, cel korzystania z Aplikacji, preferencje żywieniowe;</li>
   <li>dane dotyczące diety, posiłków, kalorii, makroskładników, produktów, przepisów, list zakupów;</li>
+  <li>zdjęcia posiłków dobrowolnie przekazane do analizy AI, propozycje rozpoznanych produktów i ilości oraz dane techniczne analizy, np. jej identyfikator, czas, status i wykorzystanie limitu;</li>
   <li>dane dotyczące aktywności fizycznej, pomiarów, postępów, celów i nawyków;</li>
   <li>dane dotyczące zdrowia lub inne dane szczególnych kategorii, jeżeli Użytkownik dobrowolnie je poda;</li>
   <li>dane zakupowe i rozliczeniowe: wariant Subskrypcji, data zakupu, status płatności, identyfikator transakcji;</li>
@@ -73,6 +74,11 @@
     <td>Obsługa płatności i Subskrypcji</td>
     <td>art. 6 ust. 1 lit. b i c RODO</td>
     <td>Przez czas obsługi Subskrypcji, a następnie przez okres wymagany przepisami podatkowymi i rachunkowymi</td>
+  </tr>
+  <tr>
+    <td>Analiza zdjęcia posiłku przez AI na żądanie Użytkownika oraz przedstawienie propozycji wpisu w dzienniku</td>
+    <td>art. 6 ust. 1 lit. b RODO – wykonanie umowy w zakresie zamówionej funkcji; jeżeli treść obejmuje dane szczególnych kategorii, zastosowanie mają również zasady wskazane w pkt 5</td>
+    <td>Zdjęcie jest przetwarzane na potrzeby wykonania analizy, bez zapisu w bazie analiz Routiny. Propozycja wyniku jest dostępna przez 24 godziny od rozpoczęcia analizy, chyba że wcześniej zostanie zapisana w dzienniku. Szczegóły pozostałych danych i retencji OpenAI wskazano w pkt 5a.</td>
   </tr>
   <tr>
     <td>Wystawianie faktur i obowiązki podatkowe</td>
@@ -116,10 +122,20 @@
 <p>5.2. W zakresie, w jakim dane te stanowią szczególne kategorie danych osobowych w rozumieniu art. 9 RODO, ich przetwarzanie odbywa się na podstawie wyraźnej zgody Użytkownika.</p>
 <p>5.3. Użytkownik może wycofać zgodę w każdym czasie. Wycofanie zgody może uniemożliwić korzystanie z niektórych funkcji Aplikacji.</p>
 
+<h2>5a. Dane przetwarzane podczas analizy zdjęć posiłków przez AI</h2>
+<p>5a.1. Analiza AI jest funkcją opcjonalną, uruchamianą na żądanie Użytkownika. Wybrane zdjęcie przesyłamy do serwera Routiny, a następnie do usługi OpenAI w celu rozpoznania widocznych produktów i zaproponowania ich ilości. Użytkownik może korzystać z ręcznego dodawania posiłków bez przekazywania zdjęcia do analizy AI.</p>
+<p>5a.2. OpenAI otrzymuje obraz przygotowany do analizy oraz instrukcję rozpoznania posiłku. W ramach tego żądania Routina nie dołącza imienia, adresu e-mail, identyfikatora Konta, danych profilu, całego dziennika ani danych z Apple Health lub Health Connect. Sam obraz może jednak zawierać dane osobowe, jeżeli Użytkownik umieści je na zdjęciu; dlatego należy unikać fotografowania osób, dokumentów, danych kontaktowych lub informacji o zdrowiu.</p>
+<p>5a.3. Oryginalne zdjęcie posiłku nie jest zapisywane w bazie analiz ani w historii posiłków Routiny. Obraz jest przetwarzany na potrzeby wykonania analizy. Nie oznacza to, że dane nie są przetwarzane lub czasowo przechowywane przez OpenAI.</p>
+<p>5a.4. Propozycję wyniku analizy wiążemy z Kontem, aby Użytkownik mógł ją sprawdzić, poprawić i odzyskać po ponownym otwarciu Aplikacji. Propozycja jest dostępna przez 24 godziny od rozpoczęcia analizy. Po upływie tego czasu jest niedostępna, a jej treść jest usuwana z bieżącej bazy przy automatycznym porządkowaniu. Jeżeli Użytkownik wcześniej zatwierdzi zapis, propozycja jest usuwana z rekordu analizy, a zaakceptowane produkty i ilości stają się wpisem w dzienniku. Do wpisu stosuje się ogólne zasady przechowywania i usuwania danych Konta.</p>
+<p>5a.5. Minimalne dane techniczne analizy, takie jak identyfikator żądania, skrót przesłanego obrazu, czas, status, informacja o wykorzystaniu limitu i identyfikatory zapisanych wpisów, mogą pozostawać powiązane z Kontem w celu zapobiegania powtórnym zapisom, rozliczania limitu i obsługi błędów. Nie stanowią kopii zdjęcia. Rekordy analiz powiązane z Kontem są usuwane z bieżącej bazy wraz z jego usunięciem. Usunięcie z bieżącej bazy nie jest równoznaczne z natychmiastowym usunięciem wcześniejszych kopii zapasowych.</p>
+<p>5a.6. Routina korzysta z OpenAI poprzez API i wyłącza zapisywanie odpowiedzi na potrzeby późniejszego odczytu w tej usłudze. OpenAI może jednak przechowywać treść żądań i odpowiedzi w ramach kontroli nadużyć i bezpieczeństwa. Według dokumentacji dostawcy standardowy okres takich zapisów wynosi do 30 dni, z możliwością dłuższego przechowywania, gdy wymaga tego prawo lub ochrona bezpieczeństwa. Nie deklarujemy całkowitego braku retencji po stronie OpenAI. Aktualne zasady dostawcy są opisane w <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener noreferrer">dokumentacji przetwarzania danych OpenAI API</a>.</p>
+<p>5a.7. Wyniki rozpoznania są propozycjami wymagającymi sprawdzenia. Nie są diagnozą ani oceną stanu zdrowia. Analiza nie zapisuje automatycznie posiłku i nie służy podejmowaniu wobec Użytkownika decyzji wywołujących skutki prawne lub w podobny sposób istotnie na niego wpływających. Ograniczenia funkcji opisano w <a href="terms">pkt 4a Regulaminu</a>.</p>
+<p>5a.8. Prawa dotyczące dostępu, sprostowania i usunięcia danych oraz kontakt z Administratorem opisano w pkt 9. Rezygnacja z kolejnych analiz nie cofa przetwarzania już wykonanego na żądanie Użytkownika. Zasady przekazywania danych poza EOG wskazano w pkt 8.</p>
+
 <h2>6. Uprawnienia urządzenia i dane techniczne</h2>
 <p>Aplikacja może prosić o dostęp do wybranych funkcji urządzenia wyłącznie w zakresie potrzebnym do korzystania z określonych funkcji:</p>
 <ul>
-  <li>aparat — do skanowania kodów kreskowych produktów;</li>
+  <li>aparat — do skanowania kodów kreskowych produktów i wykonania zdjęcia posiłku do analizy AI; wybrane zdjęcie może również pochodzić z galerii;</li>
   <li>powiadomienia push — do przypomnień o posiłkach i aktywności;</li>
   <li>dane aktywności / integracje zdrowotne — Apple Health (kroki, kalorie aktywne).</li>
 </ul>
@@ -129,6 +145,7 @@
 <p>Dane mogą być przekazywane podmiotom wspierającym Administratora w prowadzeniu Aplikacji, w szczególności:</p>
 <ul>
   <li>dostawcom hostingu i infrastruktury IT: Railway (serwer aplikacji i baza danych);</li>
+  <li>OpenAI — dostawcy usługi AI rozpoznającej posiłki na zdjęciach; zakres przekazywanych danych i zasady retencji opisano w pkt 5a;</li>
   <li>dostawcom narzędzi analitycznych i crash reporting: Firebase Analytics (Google LLC), Sentry;</li>
   <li>operatorom płatności i Dystrybutorom Aplikacji: Apple App Store, Google Play;</li>
   <li>dostawcom poczty elektronicznej do obsługi kontaktu z Użytkownikami;</li>
@@ -137,7 +154,7 @@
 </ul>
 
 <h2>8. Przekazywanie danych poza EOG</h2>
-<p>Dane mogą być przekazywane poza Europejski Obszar Gospodarczy, jeżeli korzystanie z usług określonych dostawców technologicznych (Google LLC, Sentry) powoduje taki transfer. Administrator stosuje mechanizmy wymagane przez RODO, w szczególności standardowe klauzule umowne Komisji Europejskiej.</p>
+<p>Dane mogą być przekazywane poza Europejski Obszar Gospodarczy, jeżeli korzystanie z usług określonych dostawców technologicznych (Google LLC, Sentry, OpenAI) powoduje taki transfer. W przypadku OpenAI przetwarzanie może obejmować Stany Zjednoczone i inne państwa, w których dostawca lub jego podwykonawcy świadczą usługi. Administrator stosuje mechanizmy wymagane przez RODO, w szczególności standardowe klauzule umowne Komisji Europejskiej. Informacje o zasadach przetwarzania i zabezpieczeniach transferu stosowanych przez OpenAI są dostępne w <a href="https://openai.com/policies/data-processing-addendum/" target="_blank" rel="noopener noreferrer">umowie powierzenia przetwarzania danych OpenAI</a>; kopię informacji o zabezpieczeniach transferu można uzyskać, kontaktując się z Administratorem pod adresem <a href="mailto:info@routinaclub.com">info@routinaclub.com</a>.</p>
 
 <h2>9. Prawa Użytkownika</h2>
 <p>Osobie, której dane dotyczą, przysługują następujące prawa wynikające z RODO:</p>
