@@ -22,14 +22,14 @@
 <body>
 
 <h1>Polityka Prywatności aplikacji mobilnej Routina</h1>
-<p class="meta">Polityka prywatności obowiązuje od dnia 15.05.2026 r. Aktualizacja informacji o analizie AI, zgodzie na dane zdrowotne i kopiach zapasowych: 01.10.2026 r.</p>
+<p class="meta">Polityka prywatności obowiązuje od dnia 15.05.2026 r. Ostatnia aktualizacja: 30.10.2026 r. — aktualna nazwa Administratora i zasady przygotowywanej integracji z Garmin Connect.</p>
 
-<p>Niniejsza Polityka prywatności określa zasady gromadzenia, przetwarzania i wykorzystywania danych osobowych pozyskanych od Państwa przez aplikację Routina prowadzoną przez MOIAMIA Żaneta Ochmańska-Król z siedzibą w Łomiankach Dolnych (zwaną dalej: Administratorem). Wszelkie nasze działania podlegają przepisom RODO (Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r.).</p>
+<p>Niniejsza Polityka prywatności określa zasady gromadzenia, przetwarzania i wykorzystywania danych osobowych pozyskanych od Państwa przez aplikację Routina prowadzoną przez ROUTINA Żaneta Ochmańska-Król z siedzibą w Łomiankach Dolnych (zwaną dalej: Administratorem). Wszelkie nasze działania podlegają przepisom RODO (Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r.).</p>
 
 <h2>1. Administrator danych</h2>
 <div class="table-scroll" role="region" aria-label="Dane Administratora" tabindex="0">
 <table>
-  <tr><th>Firma</th><td>MOIAMIA Żaneta Ochmańska-Król</td></tr>
+  <tr><th>Firma</th><td>ROUTINA Żaneta Ochmańska-Król</td></tr>
   <tr><th>Adres</th><td>Władysława Szpilmana 14, 05-092 Łomianki Dolne</td></tr>
   <tr><th>NIP</th><td>9840179483</td></tr>
   <tr><th>REGON</th><td>383994096</td></tr>
@@ -156,6 +156,15 @@
 <p>5b.2. Usunięcie danych z bieżącej bazy nie usuwa pojedynczych wpisów z wcześniejszej kopii zapasowej. Mogą one pozostać w niej do wygaśnięcia lub usunięcia całej kopii w powyższych terminach. Dostęp do kopii ograniczamy do osób uprawnionych do utrzymania i odzyskiwania systemu; nie wykorzystujemy ich do zwykłego korzystania z Aplikacji, analizowania użytkowników ani marketingu.</p>
 <p>5b.3. Przed wznowieniem działania po odtworzeniu kopii uwzględniamy późniejsze wycofania zgody i usunięcia Kont. Usunięte dane nie mogą ponownie stać się dostępną historią, także gdy po ich usunięciu Użytkownik udzielił nowej zgody. Jeżeli nie można wiarygodnie ustalić aktualnych decyzji, funkcje przetwarzające dane zdrowotne pozostają zablokowane do wyjaśnienia i uzgodnienia danych. Sam zapis dawnej zgody w kopii nie wystarcza do ich ponownego uruchomienia.</p>
 
+<h2 id="garmin">5c. Garmin Connect — przygotowywana integracja</h2>
+<p><strong>Funkcja jest w przygotowaniu.</strong> Poniższe zasady opisują jej planowany zakres. Bezpośrednia synchronizacja z Garmin Connect rozpocznie się dopiero po udostępnieniu funkcji, świadomym połączeniu konta Garmin przez Użytkownika i udzieleniu wymaganych zgód. Sama publikacja tej Polityki nie włącza synchronizacji.</p>
+<p><strong>Zakres danych i cel.</strong> Po połączeniu Routina będzie pobierać z Garmin Connect przez Health API i Activity API dostępne kroki, aktywne kalorie oraz ukończone treningi: ich rodzaj, datę i czas, czas trwania, dystans, kalorie i dostępne tętno. Zakres zależy od urządzenia, danych zapisanych w Garmin Connect i przyznanych uprawnień. Integracja nie obejmuje importu snu ani tras GPS. Dane będą powiązane z Kontem Routiny i wykorzystywane do wyświetlania aktywności, dziennika i postępów oraz wyboru źródła danych bez podwójnego liczenia. Nie będą publikowane innym Użytkownikom.</p>
+<p><strong>Logowanie i zgody.</strong> Logowanie odbywa się po stronie Garmina; Routina nie otrzymuje hasła do konta Garmin. Do obsługi połączenia będą przetwarzane identyfikator Użytkownika Garmin, identyfikatory importowanych rekordów, tokeny dostępu i odświeżania, zakres uprawnień oraz stan i czas synchronizacji. Upoważnienie udzielone w Garmin Connect jest odrębne od zgody na dane zdrowotne w Routinie. Zasady i podstawy przetwarzania tych danych określają pkt 4 i 5.</p>
+<p><strong>Odbiorcy danych.</strong> Garmin będzie źródłem danych oraz dostawcą autoryzacji i obsługi połączenia; komunikacja z jego API obejmie identyfikatory i tokeny niezbędne do tych operacji. Serwer Routiny, baza danych i kopie zapasowe będą obsługiwane w infrastrukturze Railway, która przetwarza dane w ramach hostingu. Dostęp po stronie Administratora będzie ograniczony do osób uprawnionych do utrzymania integracji i obsługi żądań Użytkownika. Szczególne zasady tego punktu ograniczają ogólny katalog odbiorców z pkt 7; dane Garmin nie będą przekazywane pozostałym wymienionym tam dostawcom w ramach zwykłego działania integracji. Obowiązki wynikające z prawa pozostają bez zmian.</p>
+<p><strong>Brak sprzedaży, reklam i przetwarzania przez AI.</strong> Dane otrzymane od Garmina, a także dane z nich wyprowadzone, nie będą sprzedawane ani udostępniane do celów reklamowych. Nie będą przesyłane do OpenAI, Firebase Analytics ani Sentry. Nie będą wykorzystywane do trenowania, oceniania ani ulepszania modeli AI ani przetwarzane przez funkcję analizy zdjęć posiłków opisaną w pkt 5a. Korzystanie z tej funkcji nie będzie obejmować dołączania danych Garmin do żądania analizy.</p>
+<p><strong>Odłączenie i usuwanie.</strong> Odłączenie Garmina w Routinie lub cofnięcie uprawnień w Garmin Connect zatrzyma dalszy import; samo odłączenie nie usunie wcześniej zapisanej historii w Routinie. Dane zdrowotne będą przechowywane do wycofania zgody, usunięcia Konta albo realizacji żądania ich usunięcia. Wycofanie zgody zdrowotnej lub usunięcie Konta zakończy połączenie i usunie dane Garmin oraz tokeny z bieżącej bazy Routiny; wcześniejsze kopie podlegają terminom z pkt 5b. Routina nie usuwa przez to danych z konta Garmin. Po odłączeniu tokeny nie będą dalej używane do importu.</p>
+<p><strong>Dostęp, poprawianie i eksport.</strong> Użytkownik będzie mógł przeglądać zaimportowane aktywności w Aplikacji oraz uzyskać ich kopię, żądać sprostowania lub usunięcia i wycofać zgodę zgodnie z pkt 5 i 9. Dane źródłowe należy poprawiać w Garmin Connect w zakresie udostępnionym przez Garmin; błędny import można zgłosić Administratorowi. Wnioski dotyczące danych Garmin można kierować na <a href="mailto:routina@routinaclub.com">routina@routinaclub.com</a>, także gdy używana wersja Aplikacji nie udostępnia odpowiedniego przycisku. Zasady Garmina dotyczące jego własnych usług są opisane w <a href="https://www.garmin.com/privacy/" target="_blank" rel="noopener noreferrer">polityce prywatności Garmin</a>.</p>
+
 <h2>6. Uprawnienia urządzenia i dane techniczne</h2>
 <p>Aplikacja może prosić o dostęp do wybranych funkcji urządzenia wyłącznie w zakresie potrzebnym do korzystania z określonych funkcji:</p>
 <ul>
@@ -166,6 +175,7 @@
 <p>Użytkownik może cofnąć uprawnienia systemowe w ustawieniach urządzenia. Są one odrębne od zgody na przetwarzanie danych zdrowotnych w Routinie: cofnięcie uprawnienia do odczytu z Apple Health lub Health Connect zatrzymuje ten odczyt, ale samo nie usuwa wcześniejszych wpisów w Routinie. Wycofanie zgody na ekranie „Prywatność i zgody” usuwa dane w Routinie zgodnie z pkt 5; nie usuwa danych z Apple Health lub Health Connect ani nie zastępuje zmiany uprawnień w systemie urządzenia.</p>
 
 <h2>7. Odbiorcy danych</h2>
+<p>Odrębne, ograniczone zasady dotyczące danych z przygotowywanej integracji Garmin Connect wskazano w pkt 5c.</p>
 <p>Dane mogą być przekazywane podmiotom wspierającym Administratora w prowadzeniu Aplikacji, w szczególności:</p>
 <ul>
   <li>dostawcom hostingu i infrastruktury IT: Railway (serwer aplikacji i baza danych);</li>
